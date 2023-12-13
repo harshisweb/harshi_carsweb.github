@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turbo Car Garage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Your existing styles remain unchanged */
+ body {
+            background-image: url('https://images.unsplash.com/photo-1583771181920-99122e6072e0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace 'your-background-image-url.jpg' with the URL of your background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+
+        .car img {
+            width: 70%;
+            border-radius: 29px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+        }
+
+        header h1 {
+            margin-left: 10px;
+        }
+
+        .title-icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        /* Different text colors for different sections */
+        .car-type h2 {
+            color: silver; /* silver */
+        }
+
+        .car-info p {
+            color: skyblue; /* Tomato */
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="title-icon"><i class="fas fa-car"></i></div>
+        <h1>Turbo Car Garage</h1>
+    </header>
+
+        <section class="car-type">
+        <h2>Sedans</h2>
+        <div class="car-container">
+            <div class="car">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKqxKAXulrAfBOreqBOshiKKMkVl9ohcnXLFpvhCHslUn4stPByha9BuUg_4pXYZGV9HM&usqp=CAU" alt="Sedan 1">
+                <div class="car-info">
+                    <p>Model A</p>
+                    <p>Price: RS:30,000</p>
+                    <button onclick="purchaseCar('Model A', 30000)">Purchase</button>
+                </div>
+            </div>
+            <!-- Repeat the above block for three more sedan cars -->
+        </div>
+    </section>
+
+    <section class="car-type">
+        <h2>Coupes</h2>
+        <div class="car-container">
+            <div class="car">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbY1X79zAEtonQ3QoTQOGq5ZtBUJ_xStt_Jp2K-auV_C972J6qZld_eud4DoHSFiyEpHM&usqp=CAU" alt="Coupe 1">
+                <div class="car-info">
+                    <p>Sporty Coupe</p>
+                    <p>Price: RS:35,000</p>
+                    <button onclick="purchaseCar('Model A', 30000)">Purchase</button>
+                </div>
+            </div>
+            <!-- Repeat the above block for three more coupe cars -->
+        </div>
+    </section>
+
+    <section class="car-type">
+        <h2>SUVs</h2>
+        <div class="car-container">
+            <div class="car">
+                <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/40087/thar-exterior-right-front-three-quarter-32.jpeg?q=80" alt="SUV 1">
+                <div class="car-info">
+                    <p>Model X</p>
+                    <p>Price: RS:40,000</p>
+                    <button onclick="purchaseCar('Model A', 30000)">Purchase</button>
+                </div>
+            </div>
+            <!-- Repeat the above block for three more SUV cars -->
+        </div>
+    </section>
+
+    <section class="car-type">
+        <h2>Crossovers</h2>
+        <div class="car-container">
+            <div class="car">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp9XF_GuLi5aS9gSVQeo0uPNO9SNnzyhtUyIk0eu9uLFR9GM541TT1SI_C2BL2FFRxjLY&usqp=CAU" alt="Crossover 1">
+                <div class="car-info">
+                    <p>Versatile Crossover</p>
+                    <p>Price: RS:38,000</p>
+                    <button onclick="purchaseCar('Model A', 30000)">Purchase</button>
+                </div>
+            </div>
+            <!-- Repeat the above block for three more crossover cars -->
+        </div>
+    </section>
+
+    <section class="car-type">
+        <h2>Hatchbacks</h2>
+        <div class="car-container">
+            <div class="car">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYZ9gF0Va5xEKEPSA9lqbG-mD7EBmM5KYtr75gxv9qtIi3NIkjLjOTxK3YwZDzuIaRU-4&usqp=CAU" alt="Hatchback 1">
+                <div class="car-info">
+                    <p>Compact Hatch</p>
+                    <p>Price: RS:25,000</p>
+                    <button onclick="purchaseCar('Model A', 30000)">Purchase</button>
+                </div>
+            </div>
+            <!-- Repeat the above block for three more hatchback cars -->
+        </div>
+    </section>
+
+    <section class="car-type">
+        <h2>Convertibles</h2>
+        <div class="car-container">
+            <div class="car">
+                <img src="https://assets.newatlas.com/dims4/default/3a63396/2147483647/strip/true/crop/3024x2016+0+733/resize/1200x800!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Fc1%2Fe8%2F54d8971948b9b9a300e77989fc0a%2Ff1b10887-6b4c-46e0-811a-6683aaaa739a.jpg" alt="Convertible 1">
+                <div class="car-info">
+                    <p>Sporty Convertible</p>
+                    <p>Price: RS:45,000</p>
+                    <button onclick="purchaseCar('Model A', 30000)">Purchase</button>
+                </div>
+            </div>
+            <!-- Repeat the above block for three more convertible cars -->
+        </div>
+    </section>
+
+    <section class="car-type">
+        <h2>Wagons</h2>
+        <div class="car-container">
+            <div class="car">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb_hLPm73CJLPD0jz1GxVJeOELB0FGOgceTDEKEUWcDUYx5c-Hfyk-svy1SR1AXCAG0QY&usqp=CAU" alt="Wagon 1">
+                <div class="car-info">
+                    <p>Family Wagon</p>
+                    <p>Price: RS:33,000</p>
+                    <button onclick="purchaseCar('Model A', 30000)">Purchase</button>
+                </div>
+            </div>
+            <!-- Repeat the above block for three more wagon cars -->
+        </div>
+    </section>
+
+    <section class="car-type">
+        <h2>Minivans</h2>
+        <div class="car-container">
+            <div class="car">
+                <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Toyota/Vellfire/11003/1691052621034/front-left-side-47.jpg" alt="Minivan 1">
+                <div class="car-info">
+                    <p>Spacious Minivan</p>
+                    <p>Price: RS:42,000</p>
+                    <button onclick="purchaseCar('Model A', 30000)">Purchase</button>
+                </div>
+            </div>
+            <!-- Repeat the above block for three more minivan cars -->
+        </div>
+    </section>
+
+    <section class="car-type">
+        <h2>Pickup Trucks</h2>
+        <div class="car-container">
+            <div class="car">
+                <img src="https://d2m3nfprmhqjvd.cloudfront.net/blog/20230318151044/Isuzu-D-Max-V-Cross-4x4-AT-4-jpeg-e1679132542489-1160x653.webp" alt="Pickup Truck 1">
+                <div class="car-info">
+                    <p>Heavy-Duty Pickup</p>
+                    <p>Price: RS:50,000</p>
+                    <button onclick="purchaseCar('Model A', 30000)">Purchase</button>
+                </div>
+            </div>
+            <!-- Repeat the above block for three more pickup truck cars -->
+        </div>
+    </section>
+
+    <section class="car-type">
+        <h2>Electric Cars</h2>
+        <div class="car-container">
+            <div class="car">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpAUgMVaOtnjMvbyvQzh9GaRL1P4sfVtVjc_AELmpd_SU-vonCFGrulbZuCFeNZS4vVho&usqp=CAU" alt="Electric Car 1">
+                <div class="car-info">
+                    <p>Efficient Electric</p>
+                    <p>Price: RS:50,000</p>
+                    <button onclick="purchaseCar('Model A', 30000)">Purchase</button>
+                </div>
+            </div>
+            <!-- Repeat the above block for three more electric cars -->
+        </div>
+    </section>
+
+    <section class="car-type">
+        <h2>Hybrid Cars</h2>
+        <div class="car-container">
+            <div class="car">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHLexLCUW78dMNmqCBGSH7KfdI1aKqWVqZl58ZgZszPwB-Qf_dhEomSEseDentypCy0s&usqp=CAU" alt="Hybrid Car 1">
+                <div class="car-info">
+                    <p>Eco-Friendly Hybrid</p>
+                    <p>Price: RS:38,000</p>
+                    <button onclick="purchaseCar('Model A', 30000)">Purchase</button>
+                </div>
+            </div>
+            <!-- Repeat the above block for three more hybrid cars -->
+        </div>
+    </section>
+
+    <section class="car-type">
+        <h2>Sports Cars</h2>
+        <div class="car-container">
+            <div class="car">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFo2w_rgaqWck5Dn-odvpikw3jlY6mXdmJk4Q_rYTt8NOOUcz1zsfJIrnMT1KrIhJo62A&usqp=CAU" alt="Sports Car 1">
+                <div class="car-info">
+                    <p>High-Performance Sports</p>
+                    <p>Price: RS:60,000</p>
+                    <button onclick="purchaseCar('Model A', 30000)">Purchase</button>
+                </div>
+            </div>
+            <!-- Repeat the above block for three more sports cars -->
+        </div>
+    </section>
+
+    <section class="car-type">
+        <h2>Luxury Cars</h2>
+        <div class="car-container">
+            <div class="car">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRUQaVIhRKkWrqIFTjYIFj-mu2GhQuhdnZxA2CgC_vD2OwwcXBzeNHAgtX7EOLp3GslKE&usqp=CAU" alt="Luxury Car 1">
+                <div class="car-info">
+                    <p>Luxurious Sedan</p>
+                    <p>Price: RS:80,000</p>
+                    <button onclick="purchaseCar('Model A', 30000)">Purchase</button>
+                </div>
+            </div>
+            <!-- Repeat the above block for three more luxury cars -->
+        </div>
+    </section>
+
+    <section>
+        <h2>About Us</h2>
+        <p>Welcome to Turbo Car Garage, your one-stop destination for a variety of cars catering to different needs and preferences. We offer a wide range of vehicles, from sleek sedans to powerful sports cars, ensuring that you find the perfect match for your style and requirements. Our mission is to provide top-notch service and deliver the driving experience you've always dreamed of.</p>
+    </section>
+
+    <section>
+        <h2>Contact Information</h2>
+        <p><i class="fas fa-address-book"></i> 1234 5678</p>
+    </section>
+
+    <footer>
+        <p>Go Turbo with Turbo Cars</p>
+    </footer>
+
+    <script>
+        function purchaseCar(model, price) {
+            alert('Congratulations! You have purchased ' + model + ' for RS:' + price);
+            // You can customize this function to implement the actual purchase process
+        }
+    </script>
+
+</body>
+</html>
